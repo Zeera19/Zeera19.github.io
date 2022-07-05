@@ -1,0 +1,239 @@
+
+<html>
+<head>
+<title>Education</title>
+</head>
+<script>
+function openTab(tabName) {
+  var i, x;
+  x = document.getElementsByClassName("containerTab");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(tabName).style.display = "block";
+}
+</script>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #DB7093;
+  padding: 20px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #DB7093;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html" "#home" class="active">Home Page</a>
+  <a href="biodata.html" "#biodata"> Biodata</a>
+  <a href="experience.html" "#experience">Experience</a>
+  <a href="education.html" "#education">Education</a>
+  <a href="family.html" "#family">Family</a>
+  <a href="gallery.html" "#gallery">Gallery</a>
+  <a href="quotes.html" "#quotes">Quotes</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<br>
+<br>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+<h3 align="center"><font face="forte" size="70">EDUCATION</font></h3>
+<table border="3"width="60%" align="center"cellpadding="5" cellspacing"5">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* The grid: Three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+}
+
+.containerTab {
+  padding: 20px;
+  color: white;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Closable button inside the container tab */
+.closebtn {
+  float: right;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<div style="text-align:center">
+  <h2>My School</h2>
+  <p>Study is the important</p>
+</div>
+
+<!-- Three columns -->
+<div class="row">
+  <div class="column" onclick="openTab('b1');" style="background:green;">
+    Primmary Schools
+  </div>
+  <div class="column" onclick="openTab('b2');" style="background:blue;">
+    Secondary Schools
+  </div>
+  <div class="column" onclick="openTab('b3');" style="background:red;">
+    University
+  </div>
+</div>
+
+<!-- Full-width columns: (hidden by default) -->
+<div id="b1" class="containerTab" style="display:none;background:green">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>SK Tasek Damai Ipoh</h2>
+  <p> Sekolah Kebangsaan Tasik Damai Jalan Tawas Baru Utara
+30010, Ipoh Negeri Perak, Malaysia</p>
+<p> 2008 until 2013 in standard 1 until standard 6</p>
+</div>
+
+<div id="b2" class="containerTab" style="display:none;background:blue">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>SABK MAAHAD AL UMMAH</h2>
+  <p>Sekolah Agama Bantuan Kerajaan Maahad Al-Ummah
+Jalan Jelapang,31200 Chemor,Negeri Perak, Malaysia.</p>
+<p> In 2014 until 2016, in form 1 until form 3.</p>
+  <h2>SEKOLAH MENENGAH KEBANGDSAAN DATO HAJI MUHAMMAD TAIB</h2>
+  <p> Lorong Nangka 1, Taman Rasi Chemor, 31200 Chemor, Perak</p>
+<p> In 2017 until 2018, in form 4 until form 5.</p>
+</div>
+
+<div id="b3" class="containerTab" style="display:none;background:red">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>UITM KEDAH SUNGAI PETANI</h2>
+  <p>UiTM Kedah (Kampus UiTM Kedah),08400 Merbok, Kedah. DIPLOMA IN INFORMATION MANAGEMENT</p>
+</div>
+
+</body>
+</html>
+<body>
+<body bgcolor="#CEBBEC">
+<center><IMG SRC="image/sktasekdamaiipoh.jpg"ALT="school"Height=40% Width=40% border="5"
+HSPACE=200 0ALLIGN=center>
+<h4 align="center"><b<font face="forte" size="60">SK TASEK DAMAI IPOH</font></b></h1
+<br>
+<br>
+<center><IMG SRC="image/sabkmaahad.jpg"ALT="school"Height=40% Width=40% border="5"
+HSPACE=200 0ALLIGN=center>
+<h4 align="center"><b<font face="forte" size="60">SABK MAAHAD AL UMMAH</font></b></h1
+<br>
+<br>
+<center><IMG SRC="image/smkdatohajimuhdtaib.jpg"ALT="school"Height=40% Width=40% border="5"
+HSPACE=200 0ALLIGN=center>
+<h4 align="center"><b<font face="forte" size="60">SMK DATO HAJI MOHD TAIB</font></b></h1
+<br>
+<br>
+<center><IMG SRC="image/uitmkedah2.jpg"ALT="school"Height=40% Width=40% border="5"
+HSPACE=200 0ALLIGN=center>
+<h4 align="center"><b<font face="forte" size="60">UNIVERSITI TEKNOLOGI MARA CAWANGAN KEDAH</font></b></h1
+<audio controls autoplay loop>
+<source src="audio/happyandfunPopBackgroundMusicForVideos.mp3" type="audio/mpeg">
+</body>
+</html>
